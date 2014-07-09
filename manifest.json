@@ -1,0 +1,21 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "daum.js" ]
+   },
+   "chrome_url_overrides": {
+      "newtab": "index.html"
+   },
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "Daum 스페이스 배경 새로운 탭",
+   "icons": {
+      "48": "icon.png"
+   },
+   "key": "ieijbjcimmnfodcfgefococlmmkhodad",
+   "manifest_version": 2,
+   "name": "DaumSpace New Tab",
+   "offline_enabled": true,
+   "permissions": [ ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.1"
+}

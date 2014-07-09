@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<meta charset="UTF-8">
+	<title>New Tab</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="bg"></div>
+	
+	<div class="contents">
+		<ul class="nav">
+		  <li class="active" data-type="sisa"><a href="#">시사</a></li>
+		  <li data-type="life"><a href="#">라이프</a></li>
+		  <li data-type="sports"><a href="#">스포츠</a></li>
+		  <li data-type="enter"><a href="#">연예</a></li>
+		</ul>
+
+		<script type="text/template" id="listTemplate">
+		<ul class="list-unstyled newslist" id="newslist-<%=type%>">
+		<%
+		for(var i=0; i < list.length; i++){
+			var item = list[i].component.data[0];
+		%>
+			<li><a href="<%=item.url%>"><%=item.title%></a></li>
+		<%}%>
+		</ul>
+		</script>
+	</div>
+	
+	<script src="http://media.daum.net/common/wing.data"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

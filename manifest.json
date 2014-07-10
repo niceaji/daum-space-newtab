@@ -11,7 +11,6 @@
    "icons": {
       "48": "icon.png"
    },
-   "key": "pekdeblcnjgoplfklhebgcmfhdphakda",
    "manifest_version": 2,
    "name": "DaumSpace New Tab",
    "offline_enabled": true,

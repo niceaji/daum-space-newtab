@@ -16,7 +16,7 @@ ul {
 	position: absolute;
 	top:20px;
 	right:20px;
-	max-width:400px;
+	width:300px;
 /*	margin:0 auto;
 	right:0;*/
 	background-color:#333;
@@ -24,11 +24,21 @@ ul {
 	opacity: 0.4;
 	padding:10px;
 	color:#eee;
+	-webkit-transition:width 1s,opacity 1s;
+}
+.contents.loading {
+	width:100px;
+	height:100px;
+	background: #fff url('../img/loading.gif') center center no-repeat;
+	opacity: 0.1;
 }
 
 a {
 	text-decoration: none;
 	color:#fff;
+}
+.contents.loading .nav{
+	display: none;
 }
 .nav li{
 	display:inline;

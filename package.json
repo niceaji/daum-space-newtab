@@ -1,0 +1,24 @@
+{
+  "name": "daum-space-newtab",
+  "version": "0.0.4",
+  "description": "https://chrome.google.com/webstore/detail/daumspace-new-tab/gamengiakbndchbdhddgpmpgddplfgfh",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/niceaji/daum-space-newtab.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/niceaji/daum-space-newtab/issues"
+  },
+  "homepage": "https://github.com/niceaji/daum-space-newtab",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-imagemin": "^0.8.1",
+    "imagemin-mozjpeg": "^1.0.0"
+  }
+}

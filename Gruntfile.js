@@ -4,11 +4,11 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        imagemin : {
+        imagemin: {
             jpg: {
                 options: {
                     progressive: true,
-                    optimizationLevel : 7
+                    optimizationLevel: 7
                 },
                 files: [
                     {
@@ -20,9 +20,34 @@ module.exports = function (grunt) {
                     }
                 ]
             }
+        },
+        compress: {
+            main: {
+                options: {
+                    archive: 'chrome.zip'
+                },
+                files: [
+                    {
+                        expand: true,
+                        src: [
+                            'bg/*',
+                            'css/*',
+                            'js/*',
+                            'daum.js',
+                            'icon.png',
+                            'index.html',
+                            'manifest.json'
+                        ],
+                        dest: '.'
+                    }
+                ]
+            }
         }
+
     });
 
     grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.registerTask('default', ['imagemin']);
+    grunt.loadNpmTasks('grunt-contrib-compress');
+
+    grunt.registerTask('default', ['imagemin','compress']);
 };

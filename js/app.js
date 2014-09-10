@@ -4,11 +4,18 @@ var BG_IMAGE_COUNT = 4,
     };
 
 
-
 var app = angular.module('Newtab', [])
     .controller('BgCtrl', function ($scope) {
         $scope.bg = {
             backgroundImage: 'url(bg/' + random(1, BG_IMAGE_COUNT) + '.jpg)'
-        }
+        };
+    })
+    .controller('MenuCtrl', function ($scope) {
+        $scope.tab = function (menu) {
+            chrome.tabs.create({
+                url: 'chrome://' + menu
+            }, function () {
+            });
+        };
     });
 

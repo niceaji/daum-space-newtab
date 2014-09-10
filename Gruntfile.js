@@ -31,7 +31,7 @@ module.exports = function (grunt) {
                         expand: true,
                         src: [
                             'bg/*',
-                            'css/*',
+                            'css/**/*',
                             'js/*',
                             'daum.js',
                             'icon.png',

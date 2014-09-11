@@ -49,5 +49,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-compress');
 
-    grunt.registerTask('default', ['imagemin','compress']);
+    grunt.registerTask('default', ['compress']);
 };

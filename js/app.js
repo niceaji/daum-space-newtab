@@ -1,13 +1,17 @@
-var BG_IMAGE_COUNT = 4,
-    random = function (min, max) {
-        return Math.floor(Math.random() * (max - min + 1) + min)
-    };
-
+function backgroundImage() {
+    var images = [
+        'http://i.imgur.com/1uZfyTQ.jpg',
+        'http://i.imgur.com/4Qul9CL.jpg',
+        'http://i.imgur.com/BRwVVCi.jpg',
+        'http://i.imgur.com/Q46xvvS.jpg'
+    ];
+    return(images[Math.floor(Math.random() * images.length)]);
+}
 
 var app = angular.module('Newtab', [])
     .controller('BgCtrl', function ($scope) {
         $scope.bg = {
-            backgroundImage: 'url(bg/' + random(1, BG_IMAGE_COUNT) + '.jpg)'
+            backgroundImage: 'url(' + backgroundImage() + '.jpg)'
         };
     })
     .controller('MenuCtrl', function ($scope) {

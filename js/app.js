@@ -15,6 +15,8 @@ var app = angular.module('Newtab', [])
         };
     })
     .controller('MenuCtrl', function ($scope) {
+        $scope.date = (new Date()).toISOString().slice(0,10);
+
         $scope.tab = function (menu) {
             chrome.tabs.create({
                 url: 'chrome://' + menu

@@ -8,8 +8,15 @@
 </head>
 <body >
     <div class="menu" ng-controller="MenuCtrl">
-        <a href="#" ng-click="tab('downloads')"><span class="icon-box-add"></span> 다운로드</a>
-        <a href="#" ng-click="tab('settings')"><span class="icon-cog"></span> 설정</a>
+        <a href="http://search.daum.net/search?w=tot&q=%EC%98%A4%EB%8A%98%EB%8B%AC%EB%A0%A5" class="date">
+            <span class="icon-calendar"></span> {{date}}
+        </a>
+        <a href="#" ng-click="tab('downloads')">
+            <span class="icon-arrow-down"></span> 다운로드
+        </a>
+        <a href="#" ng-click="tab('settings')">
+            <span class="icon-cog"></span> 설정
+        </a>
     </div>
 	<div class="bg" ng-controller="BgCtrl" ng-style="bg"></div>
 	<script src="js/angular.min.js"></script>

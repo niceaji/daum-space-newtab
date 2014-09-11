@@ -33,3 +33,6 @@ a:hover {
 .menu a {
     padding-left: 15px;
 }
+.menu .date{
+    font-family: verdana;
+}

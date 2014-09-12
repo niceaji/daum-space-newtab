@@ -3,6 +3,10 @@ function backgroundImage() {
         'http://i.imgur.com/1uZfyTQ.jpg',
         'http://i.imgur.com/4Qul9CL.jpg',
         'http://i.imgur.com/BRwVVCi.jpg',
+        'http://i.imgur.com/beEZ0Bf.jpg',
+        'http://i.imgur.com/0L5brur.jpg',
+        'http://i.imgur.com/UGo9MY1.jpg',
+        'http://i.imgur.com/yEFi02r.jpg',
         'http://i.imgur.com/Q46xvvS.jpg'
     ];
     return(images[Math.floor(Math.random() * images.length)]);

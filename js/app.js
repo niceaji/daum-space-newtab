@@ -12,6 +12,16 @@ function backgroundImage() {
     return(images[Math.floor(Math.random() * images.length)]);
 }
 
+function dateToYYYYMMDD(date) {
+    function pad(num) {
+        num = num + '';
+        return num.length < 2 ? '0' + num : num;
+    }
+    return date.getFullYear() + '-' +
+        pad(date.getMonth() + 1) + '-' +
+        pad(date.getDate()) + ' ' ;
+}
+
 var app = angular.module('Newtab', [])
     .controller('BgCtrl', function ($scope) {
         $scope.bg = {
@@ -19,7 +29,7 @@ var app = angular.module('Newtab', [])
         };
     })
     .controller('MenuCtrl', function ($scope) {
-        $scope.date = (new Date()).toISOString().slice(0,10);
+        $scope.date = dateToYYYYMMDD(new Date()); 
 
         $scope.tab = function (menu) {
             chrome.tabs.create({

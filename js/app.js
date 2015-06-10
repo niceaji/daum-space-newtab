@@ -7,7 +7,8 @@ function backgroundImage() {
         'http://i.imgur.com/0L5brur.jpg',
         'http://i.imgur.com/UGo9MY1.jpg',
         'http://i.imgur.com/yEFi02r.jpg',
-        'http://i.imgur.com/Q46xvvS.jpg'
+        'http://i.imgur.com/Q46xvvS.jpg',
+        'http://i.imgur.com/ilLL6Zd.jpg'
     ];
     return(images[Math.floor(Math.random() * images.length)]);
 }

@@ -8,6 +8,8 @@ function backgroundImage() {
         'http://i.imgur.com/UGo9MY1.jpg',
         'http://i.imgur.com/yEFi02r.jpg',
         'http://i.imgur.com/Q46xvvS.jpg',
+        'http://i.imgur.com/KwXr14x.jpg',
+        'http://i.imgur.com/9EaT5zv.jpg',
         'http://i.imgur.com/ilLL6Zd.jpg'
     ];
     return(images[Math.floor(Math.random() * images.length)]);
